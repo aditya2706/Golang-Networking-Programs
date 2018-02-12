@@ -20,10 +20,10 @@ type Output struct {
 }
 
 var (
-	device       string = "wlp4s0"
+    device       string = "wlp4s0"
     snapshot_len int32  = 1600
     promiscuous  bool   = false
-	err          error
+    err          error
     handle       *pcap.Handle
 )
 
@@ -63,9 +63,9 @@ func main(){
 			                    ip.SrcIP, ip.DstIP, tcp.SrcPort,
 			                    tcp.DstPort}
 			    fmt.Printf("%+v\n", newOp)
-			}
 		}
-	}
+	   }
+        }
 
 }
 
